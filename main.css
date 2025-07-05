@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 5%;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Botão padrão */
+button {
+  padding: 15px 30px;
+  font-size: 1em;
+  margin: 10px;
+  background-color: transparent;
+  border: 2px solid currentColor;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Temas */
+.tema-padrao {
+  background-color: #cccccc;
+  color: #333333;
+}
+
+.tema-padrao h1,
+.tema-padrao button {
+  color: #d48bbf;
+}
+
+.tema-claro {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.tema-claro h1,
+.tema-claro button {
+  color: #d48bbf;
+}
+
+.tema-escuro {
+  background-color: #111111;
+  color: #d46aa0;
+}
+
+.tema-escuro h1,
+.tema-escuro button {
+  color: #d46aa0;
+}
+
+/* Tema marrom */
+.tema-marrom {
+  background-color: #5c4033;
+  color: #fff;
+}
+
+.tema-marrom h1,
+.tema-marrom button {
+  color: #ffffff;
+}
+
+/* Mensagem */
+.mensagem {
+  font-size: 1.2em;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Chuva de emojis */
+#chuva {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.poop {
+  position: absolute;
+  font-size: 2em;
+  animation: cair 3s linear infinite;
+}
+
+@keyframes cair {
+  0% {
+    top: -10%;
+    opacity: 1;
+  }
+  100% {
+    top: 110%;
+    opacity: 0;
+  }
+}
